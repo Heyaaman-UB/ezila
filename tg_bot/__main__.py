@@ -49,7 +49,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/7bb512fd4c29eb943a13a.jpg"
+TECHNO_IMG = "https://telegra.ph/file/05d4b03ae5cca66a3458f.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -139,14 +139,14 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❔ Help ❔",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=" Help ",
                                                                        callback_data="help_back".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Channel",
-                                                                       url="https://t.me/slhitbotofficial")],
+                                                                       url="https://t.me/phoenix_empire")],
                                                                                    [InlineKeyboardButton(text="➕ Add To Me Your Group ➕",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Our Bots",
-                                                                       url="https://t.me/slhitbotofficial/37")
+                                                                                   InlineKeyboardButton(text=" Owner ",
+                                                                       url="https://t.me/heyaaman")
                                                                                  ]]))
 
     else:
