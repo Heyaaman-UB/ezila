@@ -344,8 +344,8 @@ def adminlist(bot: Bot, update: Update):
             name = escape_markdown("@" + user.username)
             
         if status == "administrator":
-            text += "\n`👮🏻 `{}".format(name)
-            members = "\n\n*Members:*\n`🙍‍♂️ ` {} users".format(count)
+            text += "\n` `{}".format(name)
+            members = "\n\n*Members:*\n` ` {} users".format(count)
             
     msg.reply_text(text + members, parse_mode=ParseMode.MARKDOWN)
 
@@ -401,7 +401,7 @@ dispatcher.add_handler(CHAT_PIC_HANDLER)
 dispatcher.add_handler(DEL_CHAT_PIC_HANDLER)
 dispatcher.add_handler(ADMINLIST_HANDLER)
 
-__mod_name__ = "ADMIN ⚜️"
+__mod_name__ = "ADMIN "
 
 __command_list__ = ["adminlist", "admins", "invitelink"]
 
